@@ -1,5 +1,5 @@
 # cordova-requestPermission-issue
 
-##Build
+## Build
 - `cordova prepare`
 - `cordova build ios`
