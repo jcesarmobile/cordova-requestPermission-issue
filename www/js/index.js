@@ -28,7 +28,17 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-        this.motionTest();
+
+
+        var motionBtn = document.getElementById('motion');
+        let called = false;
+        motionBtn.addEventListener('click', (e) => {
+          if(!called) {
+            this.motionTest();
+            called = true;
+          }
+
+        })
     },
 
     // Update DOM on a Received Event
