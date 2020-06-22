@@ -20,6 +20,9 @@
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
+        <edit-config target="NSMotionUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need motion access to get the moves</string>
+        </edit-config>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
